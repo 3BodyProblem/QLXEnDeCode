@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{837964D8-0FBE-47BB-A75A-975D092CEBEA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>QLXEnDeCode</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;QLXENDECODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\myCloud\workspace\boost_1_54_0\;C:\Python34\include\;D:\myCloud\workspace\googletest_20151230\include\;D:\myCloud\workspace\protobuf-3.0.2\library_vc10\Debug\;D:\myCloud\workspace\protobuf-3.0.2\src\;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\myCloud\workspace\boost_1_54_0\library_vc10;C:\Python34\libs;D:\myCloud\workspace\googletest_20151230\library_vc10\Debug;D:\myCloud\workspace\protobuf-3.0.2\library_vc10\Debug;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);gtestd.lib;libprotocd.lib;libprotobufd.lib;</AdditionalDependencies>
+      <ModuleDefinitionFile>QLXEnDeCode.def</ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;QLXENDECODE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\myCloud\workspace\boost_1_54_0\;C:\Python34\include\;D:\myCloud\workspace\googletest_20151230\include\;D:\myCloud\workspace\protobuf-3.0.2\library_vc10\Release\;D:\myCloud\workspace\protobuf-3.0.2\src\;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\myCloud\workspace\boost_1_54_0\library_vc10;C:\Python34\libs;D:\myCloud\workspace\googletest_20151230\library_vc10\Release;D:\myCloud\workspace\protobuf-3.0.2\library_vc10\Release;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);gtest.lib;libprotoc.lib;libprotobuf.lib;</AdditionalDependencies>
+      <ModuleDefinitionFile>QLXEnDeCode.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="QLXEnDeCode.def" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Decode.cpp" />
+    <ClCompile Include="demo.pb.cc" />
+    <ClCompile Include="Encode.cpp" />
+    <ClCompile Include="EnDePolicy.cpp" />
+    <ClCompile Include="EnDeType.cpp" />
+    <ClCompile Include="MarkupSTL.cpp" />
+    <ClCompile Include="OPCollection.cpp" />
+    <ClCompile Include="PYDExport.cpp" />
+    <ClCompile Include="QLXEnDeCode.cpp" />
+    <ClCompile Include="Serializer.cpp" />
+    <ClCompile Include="SHL2Test\DataReader\ConvertStr.cpp" />
+    <ClCompile Include="SHL2Test\DataReader\FastDecoder.cpp" />
+    <ClCompile Include="SHL2Test\DataReader\StepClient.cpp" />
+    <ClCompile Include="SHL2Test\DataReader\UADecoder.cpp" />
+    <ClCompile Include="SHL2Test\TemplateParser\FastBase.cpp" />
+    <ClCompile Include="SHL2Test\TemplateParser\templateReader.cpp" />
+    <ClCompile Include="UnitTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Decode.h" />
+    <ClInclude Include="demo.pb.h" />
+    <ClInclude Include="Encode.h" />
+    <ClInclude Include="EnDePolicy.h" />
+    <ClInclude Include="EnDeType.h" />
+    <ClInclude Include="IEnDeCode.h" />
+    <ClInclude Include="MarketDataStruct.h" />
+    <ClInclude Include="MarkupSTL.h" />
+    <ClInclude Include="OPCollection.h" />
+    <ClInclude Include="PYDExport.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Serializer.h" />
+    <ClInclude Include="SHL2Test\DataCenter\MemStructure.h" />
+    <ClInclude Include="SHL2Test\DataReader\ConvertStr.h" />
+    <ClInclude Include="SHL2Test\DataReader\FastDecoder.h" />
+    <ClInclude Include="SHL2Test\DataReader\StepClient.h" />
+    <ClInclude Include="SHL2Test\DataReader\UADecoder.h" />
+    <ClInclude Include="SHL2Test\TemplateParser\FastBase.h" />
+    <ClInclude Include="SHL2Test\TemplateParser\fastdef.h" />
+    <ClInclude Include="SHL2Test\TemplateParser\templateReader.h" />
+    <ClInclude Include="UnitTest.h" />
+    <ClInclude Include="UnitTestStructDefine.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

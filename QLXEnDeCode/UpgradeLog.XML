@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="QLXEnCode">
+</Property><Property Name="解决方案文件" Value="D:\Programs\XPlan\QLXEnDeCode\QLXEnCode.sln">
+</Property><Property Name="用户选项文件" Value="D:\Programs\XPlan\QLXEnDeCode\QLXEnCode.suo">
+</Property><Property Name="Date" Value="2016年9月8日">
+</Property><Property Name="Time" Value="17:18">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="QLXEnCode.sln" Description="文件已成功备份为 D:\Programs\XPlan\QLXEnDeCode\QLXEnCode.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="QLXEnCode.suo" Description="文件已成功备份为 D:\Programs\XPlan\QLXEnDeCode\QLXEnCode.suo.old">
+</Event><Event ErrorLevel="0" Project="QLXEnCode" Source="QLXEnCode.vcproj" Description="Converting project file 'D:\Programs\XPlan\QLXEnDeCode\QLXEnCode.vcproj'.">
+</Event><Event ErrorLevel="1" Project="QLXEnCode" Source="QLXEnCode.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="QLXEnCode" Source="QLXEnCode.vcproj" Description="MSB8012: $(TargetName) ('QLXEnCode') does not match the Linker's OutputFile property value 'E:\runningEnv\SZL2Fast\VSSSource\tran_src_shl2\QLXEnDeCode.dll' ('QLXEnDeCode') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="QLXEnCode" Source="QLXEnCode.vcproj" Description="MSB8012: $(TargetPath) ('D:\Programs\XPlan\QLXEnDeCode\.\Release\QLXEnCode.dll') does not match the Linker's OutputFile property value 'E:\runningEnv\SZL2Fast\VSSSource\tran_src_shl2\QLXEnDeCode.dll' ('E:\runningEnv\SZL2Fast\VSSSource\tran_src_shl2\QLXEnDeCode.dll') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="QLXEnCode" Source="QLXEnCode.vcproj" Description="MSB8012: $(TargetName) ('QLXEnCode') does not match the Linker's OutputFile property value 'E:\runningEnv\SZL2Fast\VSSSource\tran_src_shl2\QLXEnDeCode.dll' ('QLXEnDeCode') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="QLXEnCode" Source="QLXEnCode.vcproj" Description="MSB8012: $(TargetPath) ('D:\Programs\XPlan\QLXEnDeCode\.\Debug\QLXEnCode.dll') does not match the Linker's OutputFile property value 'E:\runningEnv\SZL2Fast\VSSSource\tran_src_shl2\QLXEnDeCode.dll' ('E:\runningEnv\SZL2Fast\VSSSource\tran_src_shl2\QLXEnDeCode.dll') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="QLXEnCode" Source="QLXEnCode.vcproj" Description="Done converting to new project file 'D:\Programs\XPlan\QLXEnDeCode\QLXEnCode.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="QLXEnCode" Source="QLXEnCode.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="QLXEnCode.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="QLXEnCode.sln" Description="Converted">
+</Event></UpgradeLog>

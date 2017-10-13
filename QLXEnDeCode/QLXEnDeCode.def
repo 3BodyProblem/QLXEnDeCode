@@ -1,0 +1,10 @@
+DESCRIPTION	序列/反序列化压解策略
+EXPORTS
+	GetEncodeApi
+	GetDecodeApi
+	FetchModuleVersion
+	PyInit_QLXEnDeCode
+
+
+
+

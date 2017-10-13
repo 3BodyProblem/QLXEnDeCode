@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- this templat is a encode/decode policy description of QuoteServer, which assign the file 2 QLXEnDeCode.dll  -->
+<policy version="2.0.1" updateDate="2016-11-12" baseDate="20161001" baseTime="120000">
+<!-- Shanghai Level2 Configuration -->
+	<message name="SRV_MarketInfoHead" id="0" debug="0">
+		<int8	name="MarketID"/>
+		<int8	name="MarketStatus"/>
+		<date	name="MarketDate"/>
+		<time	name="MarketTime"/>
+		<uint16	name="WareCount"/>
+		<uint8	name="KindCount"/>
+		<sequence	name="Periods" len="4">
+			<uint16	name="BeginTime"/>
+			<uint16	name="EndTime"/>
+		</sequence>
+		<uint8	name="PeriodsCount"/>
+	</message>
+	<message name="SRV_MarketInfoDetail" id="1">
+		<int32	name="Serial"/>
+		<string	name="KindName" len="8"/>
+		<uint8	name="PriceRate"/>
+		<uint16	name="LotSize"/>
+		<uint16	name="WareCount"/>
+	</message>
+	<message name="SRV_NameTableShSz" id="2">
+		<string	name="Code" len="6" counterpart="Code">-</string>
+		<string	name="Name" len="8"/>
+		<uint8	name="MarketID"/>
+		<uint8	name="SecKind"/>
+	</message>
+	<message name="SRV_MarketStatusInfo" id="3" debug="3">
+		<date name="MarketDate"/>
+		<time name="MarketTime"/>
+		<int8 name="MarketStatus"/>
+	</message>
+	<message name="SRV_IndexData" id="4">
+		<string	name="Code" len="6" counterpart="Code">-</string>
+		<uint32	name="Now"/>
+		<uint32	name="High" correlate="Now">-</uint32>
+		<uint32	name="Open" correlate="Now">-</uint32>
+		<uint32	name="Low" correlate="Now">-</uint32>
+		<uint32	name="PreClose" correlate="Now">-</uint32>
+		<double	name="Amount" precision="3"/>
+		<uint64	name="Volume"/>
+	</message>
+	<message name="SRV_StockData10" id="5">
+		<string	name="Code" len="6" counterpart="Code">-</string>
+		<uint32	name="Now"/>
+		<uint32	name="High" correlate="Now">-</uint32>
+		<uint32	name="Open" correlate="Now">-</uint32>
+		<uint32	name="Low" correlate="Now">-</uint32>
+		<uint32	name="PreClose" correlate="Now">-</uint32>
+		<double	name="Amount" precision="3"/>
+		<uint64	name="Volume"/>
+		<uint32	name="Records"/>
+		<uint32 name="Voip"/>
+		<uint32	name="HighLimit" correlate="Now">-</uint32>
+		<uint32	name="LowLimit" correlate="Now">-</uint32>
+		<sequence name="Buy" len="10">
+			<uint32 name="BuyPrice"/>
+			<uint64 name="BuyVolume"/>
+		</sequence>
+		<sequence name="Sell" len="10">
+			<uint32 name="SellPrice"/>
+			<uint64 name="SellVolume"/>
+		</sequence>
+	</message>
+<!-- Shanghai Option Configuration -->
+
+
+</policy>
+
+
+
+
+
+
+

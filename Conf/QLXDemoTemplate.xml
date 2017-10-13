@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<policy version="1.0.1" updateDate="2016-01-06" baseDate="20161001" baseTime="120000">
+	<message name="marketstatus" id="1">
+		<int8 name="Status"/>
+		<date name="Date"/>
+		<uint32 name="Time" counterpart="Time">-</uint32>
+	</message>
+	<message name="name" id="10" dbg="1">
+		<string name="Code" len="6" counterpart="Code">-</string>
+		<uint32 name="Type"/>
+		<vector name="Name" len="8"/>
+	</message>
+	<message name="security" id="13" dbg="0">
+		<string name="Code" len="6" counterpart="Code">-</string>
+		<uint32 name="Now"/>
+		<uint32 name="High" correlate="Now">-</uint32>
+		<uint32 name="Low" correlate="Now">-</uint32>
+		<uint32 name="Open" correlate="Now">-</uint32>
+		<uint32 name="Close" correlate="Now">-</uint32>
+		<uint32 name="IOPV" correlate="Now">-</uint32>
+		<double name="Amount" precision="3"/>
+		<uint64 name="Volume"/>
+		<uint32 name="Records"/>
+		<sequence name="Buy" len="10">
+			<uint32 name="BuyPrice" correlate="BuyPrice">-</uint32>
+			<uint64 name="BuyVolume"/>
+		</sequence>
+		<sequence name="Sell" len="10">
+			<uint32 name="SellPrice" correlate="SellPrice">-</uint32>
+			<uint64 name="SellVolume"/>
+		</sequence>
+	</message>
+	<message name="trade" id="14">
+		<string name="Code" len="6" counterpart="Code">-</string>
+		<uint32 name="TradeNo" counterpart="TradeNo">-</uint32>
+		<uint32 name="TradeTime" counterpart="TradeTime"/>
+		<uint32 name="Price"/>
+		<double name="Volume" precision="3"/>
+	</message>
+	<message name="index" id="15">
+		<string name="Code" len="6" counterpart="Code">-</string>
+		<uint32 name="Low"/>
+		<uint32 name="Open" correlate="Low">-</uint32>
+		<uint32 name="High" correlate="Low">-</uint32>
+		<uint32 name="Now" correlate="Low">-</uint32>
+		<double name="Amount" precision="3"/>
+		<double name="Volume" precision="3"/>
+	</message>
+	<message name="virtualprice" id="16">
+		<string name="Code" len="6" counterpart="Code">-</string>
+		<uint32 name="VirtualPrice"/>
+		<double name="VirtualVolume" precision="3"/>
+		<double name="BuyVirtualVol" precision="3"/>
+		<double name="SellVirtualVol" precision="3"/>
+	</message>
+</policy>
+
+
+
+
+
+
