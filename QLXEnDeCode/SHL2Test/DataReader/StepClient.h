@@ -1,7 +1,7 @@
 #ifndef __STEPCLIENT_H__
 #define __STEPCLIENT_H__
 
-
+#ifdef _DEBUG
 #pragma warning(disable : 4786)
 #pragma warning(disable : 4018)
 #pragma warning(disable : 4996)
@@ -124,4 +124,7 @@ public:
 };
 
 #endif
+#endif
+
+
 

@@ -3,7 +3,7 @@ EXPORTS
 	GetEncodeApi
 	GetDecodeApi
 	FetchModuleVersion
-	PyInit_QLXEnDeCode
+
 
 
 

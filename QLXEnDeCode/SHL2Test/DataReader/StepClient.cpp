@@ -1,3 +1,4 @@
+#if _DEBUG
 #include "math.h"
 #include <stdio.h>
 #include <time.h>
@@ -654,5 +655,9 @@ bool PushDataClient::LoadFastData( const char* pszDataFile )
 
 	return true;
 }
+
+
+#endif
+
 
 

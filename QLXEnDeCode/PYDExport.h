@@ -1,6 +1,10 @@
 #ifndef __QLX_PYD_EXPORT_H__
 #define __QLX_PYD_EXPORT_H__
+
+#if _DEBUG
 #define	EXPORT_PYTHON_PYD_MODULE			1			///< 是否需要提供支持pyd导出支持的设定
+#endif
+
 #ifdef	EXPORT_PYTHON_PYD_MODULE
 
 

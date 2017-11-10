@@ -17,8 +17,10 @@ BOOST_PYTHON_FUNCTION_OVERLOADS( RunAllDemoTest_Encode_Overloads, RunAllDemoTest
 
 /**
  * @brief			导出 python module
+ * @note			官方做法的定义如下：	BOOST_PYTHON_MODULE(QLXEnDeCode)
  */
-BOOST_PYTHON_MODULE(QLXEnDeCode)
+void BOOST_PP_CAT(init_module_,QLXEnDeCode)();                               
+extern "C" __declspec(dllexport) _BOOST_PYTHON_MODULE_INIT(QLXEnDeCode)
 {
 	using namespace boost::python;
 	def( "PrintVersion", PrintVersion, "Print module version of \"QLXEnDeCode.pyd\"." );

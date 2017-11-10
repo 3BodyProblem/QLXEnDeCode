@@ -4,6 +4,6 @@
     <LocalDebuggerCommandArguments>QLXEnDeCoder.py</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerCommand>python</LocalDebuggerCommand>
-    <LocalDebuggerWorkingDirectory>D:\Programs\XPlan\QLXEnDeCode\QLXEnDeCode\Debug\</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory>D:\QYQWin\HQ\Source\QLXEnDeCode\Debug\</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
 </Project>

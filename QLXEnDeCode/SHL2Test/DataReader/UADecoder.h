@@ -2,6 +2,7 @@
 #define __UA_DECODER_H__
 
 
+#if _DEBUG
 #pragma warning(disable:4786)
 #include <list>
 #include <map>
@@ -255,6 +256,7 @@ protected:
 };
 
 
+#endif
 #endif//__UA_DECODER_H__
 
 

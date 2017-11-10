@@ -18,6 +18,7 @@ InterfaceDecode			*g_pDecoder = NULL;
 
 ///< -------------------- DEMO部分的测试类： PROTOBUF序列化/反序列化类定义 ----------------------------------
 
+
 static std::string	s_Param1 = "";											///< 以下是测试参数( 1 ~ 6 )
 static std::string	s_Param2 = "";
 static std::string	s_Param3 = "";
@@ -608,7 +609,7 @@ TEST_F( TestDemoSnap, Loop )
 {
 	unsigned __int64	nSizeCnt = 0;
 
-	for( int i = 0; i < 9999; i++ )
+	for( int i = 0; i < 1024; i++ )
 	{
 		SetUp();
 

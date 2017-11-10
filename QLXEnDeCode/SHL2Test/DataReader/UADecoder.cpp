@@ -1,3 +1,4 @@
+#if _DEBUG
 #include <math.h>
 #include <iostream>
 #include "UADecoder.h"
@@ -852,6 +853,9 @@ void	Cb_DeCodeUA3107::OnEnd()
 	g_DataHolder.Write( 16, (char*)m_pVirtualPrice, sizeof(tagDemoVirtualPriceType) );
 	g_nEncodeBufferSize = g_pEncoder->EncodeMessage( 16, (char*)m_pVirtualPrice, sizeof(tagDemoVirtualPriceType) );
 }
+
+
+#endif
 
 
 
